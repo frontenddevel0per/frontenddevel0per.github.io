@@ -1,0 +1,178 @@
+body {
+  background-image: url(images/fon1.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: "Times New Roman", sans-serif;
+  color: #8B0000;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  color: #8B0000;
+  font-size: 40px;
+  font-family: "Trebuchet MS", sans-serif;
+  text-align: center;
+}
+
+h2 {
+  color: #8B0000;
+  font-size: 30px;
+  text-align: center;
+  font-family: "Trebuchet MS", sans-serif;
+}
+
+h4 {
+  text-align: center;
+  font-size: 25px;
+}
+
+h5 {
+  text-align: center;
+  font-size: 20px;
+}
+
+footer {
+  margin-top: 2em;
+  border-top: 3px solid orange;
+}
+
+img {
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  border: 2px solid #8B0000;
+}
+
+.header-menu {
+  display: flex;
+  flex: auto;
+  flex-grow: 100%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border-top: 3px solid orange;
+  border-bottom: 3px solid orange;
+  /* background-color: rgba(0, 255, 0, 0.5); */
+}
+
+.header-menu-part {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.header-menu-part-text {
+  text-align: center;
+  font-size: 25px;
+  color: black;
+}
+
+a:hover .header-menu-part-text {
+  color: grey;
+}
+
+.greetings {
+  display:grid;
+  grid-template-columns: 40% 60%;
+  padding: 1em;
+  align-items: center;
+}
+
+.greetings-part {
+  padding: 1em;
+  font-size: 20px;
+}
+
+.greetings-part img {
+  width: 100%;
+}
+
+.greetings-text {
+  text-align: justify;
+}
+
+.footer-main {
+  text-align: center;
+}
+
+.footer-watermark {
+  text-align: center;
+}
+
+.main-flex {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 1em;
+}
+
+.main-flex-part {
+  padding: 1em;
+}
+
+.main-flex-part img {
+   height: 300px;
+}
+
+.main-flex-part-text {
+  text-align: justify;
+  font-size: 20px;
+  font-size-adjust: 20px;
+}
+
+.cursive {
+  font-style: oblique;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.video {
+  text-align: center;
+  margin-top: 1em;
+}
+
+.rules-header {
+  font-size: 25px;
+  text-align: center;
+  color: blue;
+  font-style: oblique,italic;
+  text-decoration: underline;
+}
+
+.rules {
+  color: blue;
+}
+
+.main-text {
+  padding-left: 2em;
+  padding-right: 2em;
+  font-size: 18px;
+}
+
+.main-text-center {
+  padding-left: 2em;
+  padding-right: 2em;
+  text-align: right;
+}
+
+
+
+.contacts-flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.contacts-text {
+  text-align: center;
+}
+
+.contacts-text a {
+  color: blue;
+}
+
+.contacts-text a:hover {
+  color: red;
+}
