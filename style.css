@@ -1,0 +1,534 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background-color: white;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0 0;
+    font-family: 'Open Sans', sans-serif, monospace;
+    background-color: white;
+}
+
+.header__Container {
+    background-color: white;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10em;
+    background-color: white;
+}
+
+@media all and (max-width: 1200px) {
+    .header {
+        margin: 0 5em;
+    }
+}
+
+@media all and (max-width: 992px) {
+    .header {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .header__logo {
+        margin: 0 auto;
+    }    
+}
+
+.header__menu {
+    min-width: 750px;
+    width: 60%;
+}
+
+@media all and (max-width: 992px) {
+    .header__menu {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+/* @media and (max-width: 1100px) {
+
+} */
+
+.header__menu ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+@media all and (max-width: 768px) {
+    .header__menu {
+        min-width: 500px;
+    }
+
+    .header__menu ul {
+        flex-direction: column;
+        padding: 0;
+        margin: 0 auto 0 auto;
+    }
+}
+
+.header__menu li {
+    margin-top: 1em;
+    list-style-type: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    color: #551A8B;
+}
+
+@media all and (max-width: 768px) {
+    .header__menu li {
+        margin: 0.5em auto;
+    }
+}
+
+.header__menu li a {
+    text-decoration: none;
+}
+
+.header__menu li a:hover {
+    text-decoration: underline rgb(22, 71, 231);
+    text-decoration-thickness: 3px;
+}
+
+.dropdown button {
+    list-style-type: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    color: #551A8B;
+    border: none;
+    outline: none;
+    background-color: inherit;
+    vertical-align: middle;
+    margin-top: -1px;
+}
+
+.dropdown__content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #551A8B;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+.dropdown:hover .dropdown__content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.dropdown:hover .dropdown__content a {
+    padding-top: 10px;
+}
+
+.dropdown:hover .dropdown__content:last-child {
+    padding-bottom: 10px;
+}
+
+.welcomeText {
+    background-image: url(pictures/background-anime.jpg);
+    background-size: 100%;
+    margin: 0 auto;
+    padding-top: 10em;
+    padding-bottom: 10em;
+    text-align: center;
+    color: white;
+}
+
+@media all and (max-width: 1729px) {
+    .welcomeText {
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+.welcomeText__Decoration {
+    color: rgb(40, 243, 142);
+}
+
+.welcomeText h1 {
+    font-size: 70px;
+    font-weight: 500;
+    text-shadow: 0 0 8px rgb(0 0 0 / 60%);
+}
+
+.welcomeText h2 {
+    font-size: 50px;
+    font-weight: 500;
+    text-shadow: 0 0 8px rgb(0 0 0 / 60%);
+}
+
+.welcomeText p {
+    font-size: 25px;
+    font-weight: 500;
+    text-shadow: 0 0 6px rgb(0 0 0 / 75%);
+}
+
+.raspisanie {
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+.raspisanie__navbar ul{
+    display: flex;
+    margin: 2em auto;
+    justify-content: space-between;
+}
+
+.raspisanie__navbar li {
+    list-style-type: none;
+    padding: 0em 2em;
+    border-right: 2px solid #00aded;
+}
+
+.raspisanie__navbar li:last-child {
+    border-right: none;
+}
+
+.raspisanie__navbar li button {
+    border: none;
+    outline: none;
+    background-color: inherit;
+    vertical-align: middle;
+    font-size: 20px;
+}
+
+.raspisanie__navbar .active {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.ads h2, .teachers h2, .raspisanie h2 , .educationForms h2 , .workingPrograms h2 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    margin-top: 0;
+    padding-top: 1.5em;
+}
+
+.underlineBlock {
+    height: 2px;
+    margin: 15px auto;
+    width: 100px;
+    background-color: #00aded;
+}
+
+.ads__main {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    justify-content: space-between;
+    width: 90%;
+    padding-top: 1em;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.ads__main__part {
+    text-align: center;
+    border: 2px solid #00aded;
+    border-radius: 20px;
+    padding: 0 1em;
+}
+
+.ads__main__part img {
+    width: 15%;
+    padding-top: 1em;
+}
+
+.ads__main__part h3 {
+    font-size: 35px;
+}
+
+.ads__main__part p {
+    font-size: 18px;
+    text-align: center;
+}
+
+.redUnderline {
+    text-decoration: underline 1px red;
+}
+
+.teachers table , .educationForms table{
+    width: 90%;
+    margin: 3em auto 0 auto;
+    padding-bottom: 2em;
+    border-collapse: collapse;
+    font-size: 17px;
+    border: 2px solid #00aded;
+}
+
+.teachers-table td , .educationForms td{
+    height: 30px;
+    /* border: 1px solid black; */
+    border: 1px solid #00aded;
+    text-align: center;
+}
+
+.teachers-table td:first-child , .educationForms td:first-child{
+    text-align: left;
+    padding-left: 5px;
+}
+  
+.teachers-table-top {
+    text-align: center;
+    /* background-color: lightgrey; */
+    background-color: #00aded;
+    color: white;
+}
+
+.teachers-table-top a {
+    color: white;
+    text-decoration: none;
+}
+
+.teachers-table-top a:hover {
+    color:rgba(96, 98, 107, 0.548);
+    transition: 500ms all ease;
+}
+
+@media all and (max-width: 768px) {
+    .teachers-table {
+        min-width: 90%;
+        max-width: 90%;
+    }
+}
+
+.main-stroke td {
+    background-color: #b21fd6;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    /* height: 40px; */
+    text-align: center;
+}
+
+.textAlign__center {
+    text-align: center;
+}
+
+.educationForms h2 {
+    margin-top: 0;
+}
+
+.educationForms__navbar {
+    padding-top: 2em;
+    padding-bottom: 2em;
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.educationForms__navbar__button {
+    list-style-type: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 600;
+    /* color: #551A8B; */
+    border: none;
+    border-bottom: 2px solid #b21fd6;
+    outline: none;
+    background-color: inherit;
+    vertical-align: middle;
+    transition: 500ms all ease;
+}
+
+.nonActiveButton {
+    border: none;
+    font-size: 16px;
+    transition: 500ms all ease;
+}
+
+.educationForms table:first-child td{
+    text-align: center;
+} /*фикс моего говна*/
+
+.ochnaya, .zaochnaya {
+    transition: 500ms all ease;
+}
+
+.zaochnaya {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.zaochnaya a {
+    font-weight: bold;
+}
+
+.displayNone {
+    display: none;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.workingPrograms {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.workingPrograms__main {
+    margin-top: 2em;
+    padding-bottom: 2em;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    justify-content: space-between;
+    grid-row-gap: 2em;
+}
+
+@media all and (max-width: 1712px) {
+    .workingPrograms__main {
+        grid-template-columns: 45% 45%;
+    }
+}
+
+@media all and (max-width: 1141px) {
+    .workingPrograms__main {
+        grid-template-columns: 100%;
+    }
+}
+
+.workingPrograms__button {
+    list-style-type: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    /* color: #551A8B; */
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    background-color: #b21fd6;
+    color: white;
+    vertical-align: middle;
+    padding: 7px;
+    width: 100%;
+}
+
+.workingPrograms__main__part__list {
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.25s linear, visibility 0.25s linear;
+}
+
+.workingPrograms__main__part__list p {
+    border-left: 2px solid #b21fd6;
+    border-right: 2px solid #b21fd6;
+}
+
+.workingPrograms__main__part__list a {
+    text-decoration: none;
+}
+
+.workingPrograms__main__part__list:last-child {
+    border-bottom: 2px solid #b21fd6;
+}
+
+.listDisplayVisible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.contactInfo {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 1.5em;
+    border-top: 2px solid #b21fd6;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contactInfo__address {
+    text-align: left;
+    font-size: 16px;
+}
+
+.contactInfo__address h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 1em;
+    vertical-align: top;
+    color: #551A8B;
+} 
+
+.contactInfo__socials {
+    margin-top: 1em;
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+    height: 50px;
+    vertical-align: bottom;
+}
+
+.contactInfo__socials img {
+    width: 50px;
+    height: 50px;
+}
+
+#vkIcon:hover {
+    color: blue;
+    transition: 250ms all ease;
+}
+
+.ytIcon:hover {
+    fill: red;
+    transition: 250ms all ease;
+}
+
+.vkIcon:hover {
+    fill: rgb(36, 36, 255);
+    transition: 250ms all ease;
+}
+
+.ttIcon:hover {
+    fill:#ff3838;
+    transition: 250ms all ease;
+}
+
+/* вот это вот снизу - фикс флагов под разную высоту навбара при оптимизации под разные разрешения */
+
+#welcome, #teachers, #educationForms {
+    padding-top: 10px;
+    margin-top: -10px;
+}
+
+@media all and (max-width: 992px) {
+    #welcome, #teachers, #workingPrograms, #educationForms {
+        padding-top: 75px;
+        margin-top: -75px;
+    }
+}
+
+@media all and (max-width: 768px) {
+    #welcome, #teachers, #workingPrograms, #educationForms {
+        padding-top: 165px;
+        margin-top: -165px;
+    }
+}

@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <meta name="HandheldFriendly" content="True"> -->
+  <link rel="stylesheet" href="style.css">
+  <title>Кафедра высшей математики СПб ГЭУ</title>
+  <base target="_blank">
+</head>
+
+<body>
+  <div id="welcome"></div>
+  <div class="header__Container">
+    <div class="header">
+      <div class="header__logo">
+        <img src="pictures/logo.jpg" alt="Лого" height="75">
+      </div>
+      <div class="header__menu">
+        <ul>
+          <li>
+            <a href="#welcome" target="_self">Начало</a>
+          </li>
+          <!-- <li>
+                            <a href="#raspisanie">Графики сдач</a>
+                        </li> -->
+          <li>
+            <a href="#teachers" target="_self">Преподаватели</a>
+          </li>
+          <li>
+            <div class="dropdown">
+              <button>Формы обучения</button>
+              <div class="dropdown__content">
+                <a href="#educationForms" target="_self" onclick="ochnaya()">Очная</a>
+                <a href="#educationForms" target="_self" onclick="zaochnaya()">Заочная</a>
+                <a href="#educationForms" target="_self" onclick="zaochnaya()">Очно-заочная</a>
+              </div>
+            </div>
+
+            <!--<a href="">Формы обучения</a>-->
+          </li>
+          <li>
+            <a href="#workingPrograms" target="_self">Рабочие программы</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="welcomeText">
+    <h1>
+      <span class="welcomeText__Decoration">С</span>анкт-<span class="welcomeText__Decoration">П</span>етер<span
+        class="welcomeText__Decoration">б</span>ургский
+      <br><span class="welcomeText__Decoration">Г</span>осударственный
+      <br><span class="welcomeText__Decoration">Э</span>кономический
+      <br><span class="welcomeText__Decoration">У</span>ниверститет
+    </h1>
+    <h2>Кафедра Высшей Математики</h2>
+    <p>
+      "Капитал боится отсутствия прибыли или слишком маленькой прибыли, как природа боится пустоты.
+      <br>Но раз имеется в наличии достаточная прибыль, капитал становится смелым."
+      <br><br>Карл Маркс
+    </p>
+  </div>
+  <!-- <div class="raspisanie" id="raspisanie">
+            <h2>
+              Графики сдач
+            </h2>
+            <div class="underlineBlock"></div>
+            <div class="raspisanie__navbar">
+              <ul>
+                <li>
+                  <button class="active">
+                    График сдачи КТ
+                  </button>
+                </li>
+                <li>
+                  <button>
+                    График пересдачи КТ
+                  </button>
+                </li>
+                <li>
+                  <button>
+                    График пересдачи КТ за предыдущие семестры
+                  </button>
+                </li>
+                <li>
+                  <button>
+                    График пересдачи экзаменов за предыдущие семестры
+                  </button>
+                </li>
+                <li>
+                  <button>
+                    График пересдачи
+                  </button>
+                </li>
+              </ul>
+            </div>
+        </div> -->
+  <div class="ads">
+    <h2>
+      Объявления
+    </h2>
+    <div class="underlineBlock"></div>
+    <div class="ads__main">
+      <div class="ads__main__part">
+        <img src="pictures/image01.svg" alt="">
+        <!-- <h3>
+                        Объявление #1
+                    </h3> -->
+        <p class="redUnderline">
+          АКТУАЛЬНАЯ ИНФОРМАЦИЯ<br> ПО КОНСУЛЬТАЦИЯМ 2 СЕМЕСТРА 2022 ГОДА:
+          <br><br><a href="documents/Консультации 2 семестр 2022.pdf">СКАЧАТЬ</a>
+        </p>
+      </div>
+      <div class="ads__main__part">
+        <img src="pictures/image04.svg" alt="">
+        <!-- <h3>
+                        Объявление #2
+                    </h3> -->
+        <p>
+          ЗАВЕДУЮЩИЙ КАФЕДРОЙ ВЫСШЕЙ МАТЕМАТИКИ:<br>
+          <span class="redUnderline">САВИНОВ ГЕННАДИЙ ВОЛОДАРОВИЧ</span><br>
+          ПРИЕМНЫЕ ЧАСЫ:<br>
+          <span class="redUnderline">ПОНЕДЕЛЬНИК 14.30-16.00</span><br>
+          М.Т. 3351
+        </p>
+      </div>
+    </div>
+  </div>
+  <div id="teachers"></div>
+  <div class="teachers">
+    <h2>
+      Преподаватели
+    </h2>
+    <div class="underlineBlock"></div>
+    <table class="teachers-table">
+      <tr class="teachers-table-top">
+        <td colspan="4" style="text-align: center;">Расписание преподавателей можно посмотреть на сайте: <a
+            href="https://rasp.unecon.ru/raspisanie.php">*тыкать сюда*</a>.</td>
+      </tr>
+      <tr class="main-stroke">
+        <td style="text-align: center;">ФИО</td>
+        <td>Должность</td>
+        <td>E-mail</td>
+        <td>Лектор в группах</td>
+      </tr>
+      <tr>
+        <td><span class="bold">Савинов</span> Геннадий Володарович</td>
+        <td>Заведующий кафедрой<br>профессор</td>
+        <td>dept.math@unecon.ru</td>
+        <td>БИ-2101-03, Э-2005-08,БИ-2001-03 </td>
+      </tr>
+      <tr>
+        <td><span class="bold">Дорофеев</span> Вячеслав Юрьевич</td>
+        <td>Заместитель заведующего кафедрой по научной работе<br>доцент</td>
+        <td>friedlab1@mail.ru</td>
+        <td>УК-2101, УК.з-2101, ГМ-2101-02, УП-2101-02, Э-2109-12, ГД.з-2101</td>
+      </tr>
+      <tr>
+        <td><span class="bold">Коростелева</span> Ольга Николаевна</td>
+        <td>Заместитель заведующего кафедрой по учебной и методической работе</td>
+        <td>dept.math@unecon.ru</td>
+        <td>Э-2009-12</td>
+      </tr>
+      <tr>
+        <td><span class="bold">Васильковская</span> Елена Александровна</td>
+        <td>Специалист по учебно-методической работе</td>
+        <td>dept.math@unecon.ru</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="bold">Авдушева</span> Надежда Евгеньевна</td>
+        <td>Доцент</td>
+        <td>avdne@yandex.ru</td>
+        <td>Э-2113-16, УК-2001, Э-2113-16</td>
+      </tr>
+      <tr>
+        <td><span class="bold">Бегун</span> Никита Андреевич</td>
+        <td>Старший преподаватель</td>
+        <td>nikitabegun88@gmail.com</td>
+        <td>М-2112-17</td>
+      </tr>
+      <tr>
+        <td><span class="bold">Варфоломеева</span> Галина Борисовна</td>
+        <td>Старший преподаватель</td>
+        <td>vdvbark@rambler.ru</td>
+        <td>Э-2105-08, ИС-2101-02</td>
+      </tr>
+      <tr>
+        <td><span class="bold">Вздыхалкина</span> Екатерина Константиновна</td>
+        <td>Доцент</td>
+        <td>katerinache@yandex.ru</td>
+        <td>ЗР-2101-03, Э-2017-19, ТЖ-2102, ТЖ-2101-02</td>
+      </tr>
+      <tr>
+        <td><span class="bold">Галилеев</span> Михаил Михаилович</td>
+        <td>Доцент</td>
+        <td>mgaliley@yandex.ru</td>
+        <td>М-2105-07,М-2118, М-2001-04</td>
+      </tr>
+      <tr>
+        <td><span class="bold">Грузина</span> Татьяна Николаевна</td>
+        <td>Старший преподаватель</td>
+        <td>tgrouzina@mail.ru</td>
+        <td>М-2108-11, М-2008-11</td>
+      </tr>
+      <tr>
+        <td><span class="bold">Десницкая</span> Валентина Николаевна</td>
+        <td>Доцент</td>
+        <td>val.desnitskaya@mail.ru</td>
+        <td>ИБ-2001-02, ПИ-2101-02, ЗР-2104-05, МО-2101-03, МО-2108, ИС-2001</td>
+      </tr>
+      <tr>
+        <td><span class="bold">Дмитриев</span> Владимир Георгиевич</td>
+        <td>Доцент</td>
+        <td>vdmitriev@gmail.com</td>
+        <td>БИ-2001-03, ИС-2101-02, ПИ-2101-02, ИБ-2101-02</td>
+      </tr>
+      <tr>
+        <td><span class="bold">Емельянов</span> Евгений Георгиевич</td>
+        <td>Доцент</td>
+        <td>emelyanoveg@rambler.ru</td>
+        <td>Т-2101, УК-2101, ГД-2101-04</td>
+      </tr>
+      <tr>
+        <td><span class="bold">Ермаченко</span> Юлия Германовна</td>
+        <td>Доцент</td>
+        <td>julia@ermachenko.ru</td>
+        <td>Э-2013-15, МО-2104-07</td>
+      </tr>
+      <tr>
+        <td><span class="bold">Зверева</span> Елена Николаевна</td>
+        <td>Доцент</td>
+        <td>e.zvereva@rambler.ru</td>
+        <td>М-2101-04, СЦ-2101</td>
+      </tr>
+      <tr>
+        <td><span class="bold">Игнатова</span> Светлана Евгеньевна</td>
+        <td>Доцент</td>
+        <td>letfory@yandex.ru</td>
+        <td>С-2101,Т-2101, Э-2105-08, ПИ-2001-02</td>
+      </tr>
+      <tr>
+        <td><span class="bold">Кондратьева</span> Ирина Владиславовна</td>
+        <td>Старший преподаватель</td>
+        <td>ik19.60@mail.ru</td>
+        <td>ТВ-2101, БИ-2101-03</td>
+      </tr>
+      <tr>
+        <td><span class="bold">Матвеев</span> Павел Николаевич</td>
+        <td>Доцент</td>
+        <td>pavel.n.matveev@gmail.com</td>
+        <td>УК-2001, Э.в-2001-02</td>
+      </tr>
+      <tr>
+        <td><span class="bold">Петрас</span> Станислав Вацловович</td>
+        <td>Доцент</td>
+        <td>stv.petras@gmail.com</td>
+        <td>Э-2117-20, ИБ-2001-02, Э.в-2001-02</td>
+      </tr>
+      <tr>
+        <td><span class="bold">Соколова</span> Жанна Владимировна</td>
+        <td>Доцент</td>
+        <td>sokolova_zanna@mail.ru</td>
+        <td>ТЖ-2101-02, ЭБ-2001-03</td>
+      </tr>
+      <tr>
+        <td><span class="bold">Соколова</span> Анна Васильевна</td>
+        <td>Доцент</td>
+        <td>sklv23@mail.ru</td>
+        <td>Э-2109-12, М-2014-17</td>
+      </tr>
+      <tr>
+        <td><span class="bold">Сорокина</span> Ольга Андреевна</td>
+        <td>Старший преподаватель</td>
+        <td>lesnayao@yandex.ru</td>
+        <td>ТД-2001-02, Э-2117-20</td>
+      </tr>
+      <tr>
+        <td><span class="bold">Чернэуцану</span> Татьяна Васильевна</td>
+        <td>Доцент</td>
+        <td>tvcherneucanu@gmail.com</td>
+        <td>ЭБ-2101-03, М-2005-07, М-2012</td>
+      </tr>
+    </table>
+  </div>
+  <div id="educationForms"></div>
+  <div class="educationForms">
+    <h2>
+      Формы обучения
+    </h2>
+    <div class="underlineBlock"></div>
+    <div class="educationForms__navbar">
+      <button id="ochnaya" class="educationForms__navbar__button" onclick="ochnaya()">Очная</button>
+      <button id="zaochnaya" class="educationForms__navbar__button nonActiveButton" onclick="zaochnaya()">Очно-заочная,
+        заочная</button>
+    </div>
+    <div class="ochnaya" id="ochnaya__info">
+      <table>
+        <tr class="main-stroke">
+          <td>Специальность</td>
+          <td>Факультет</td>
+          <td>Адрес и телефон деканат</td>
+          <td>Адрес учебного корпуса, где будут проходить занятия</td>
+        </tr>
+        <tr>
+          <td>Бизнес-информатика</td>
+          <td>Факультет информатики и прикладной математики</td>
+          <td>Наб. канала Грибоедова, д. 30/32, тел. (812) 458-97-47, каб. 2031</td>
+          <td>Наб. канала Грибоедова, д. 30/32</td>
+        </tr>
+        <tr>
+          <td>Информационные системы и технологии</td>
+          <td>Факультет информатики и прикладной математики</td>
+          <td>Наб. канала Грибоедова, д. 30/32, тел. (812) 458-97-47, каб. 2031</td>
+          <td>Наб. канала Грибоедова, д. 30/32</td>
+        </tr>
+        <tr>
+          <td>Прикладная математика и информатика</td>
+          <td>Факультет информатики и прикладной математики</td>
+          <td>Наб. канала Грибоедова, д. 30/32, тел. (812) 458-97-47, каб. 2031</td>
+          <td>Наб. канала Грибоедова, д. 30/32</td>
+        </tr>
+        <tr>
+          <td>Управление качеством</td>
+          <td>Факультет управления</td>
+          <td>Кузнечный пер., д. 9/27, тел. (812) 312-72-32, каб. 603</td>
+          <td>Московский пр, д.103</td>
+        </tr>
+        <tr>
+          <td>Гостиничное дело</td>
+          <td>Факультет сервиса, туризма и гостеприимства</td>
+          <td>7-я Красноармейская ул., д. 6/8, тел (812) 458-97-61, (812) 458-97-62, каб. 101, 102, 105</td>
+          <td>Московский пр, д.103</td>
+        </tr>
+        <tr>
+          <td>Государственное и муниципальное управление</td>
+          <td>Факультет управления</td>
+          <td>Кузнечный пер., д. 9/27, тел. (812) 312-72-32, каб. 603</td>
+          <td>Московский пр, д.103</td>
+        </tr>
+        <tr>
+          <td>Зарубежное регионоведение</td>
+          <td>Гуманитарный факультет</td>
+          <td>Москательный переулок, д. 4, тел (812) 458-97-44, каб. 205,215</td>
+          <td>Наб. канала Грибоедова, д. 30/32</td>
+        </tr>
+        <tr>
+          <td>Международные отношения</td>
+          <td>Гуманитарный факультет</td>
+          <td>Москательный переулок, д. 4, тел (812) 458-97-44, каб. 205,215</td>
+          <td>Наб. канала Грибоедова, д. 30/32</td>
+        </tr>
+        <tr>
+          <td>Менеджмент (2 группа профилей)</td>
+          <td>Факультет управления</td>
+          <td>Кузнечный пер., д. 9/27, тел. (812) 312-72-32, каб. 603</td>
+          <td>Московский пр, д.103</td>
+        </tr>
+        <tr>
+          <td>Менеджмент (1 группа профилей)</td>
+          <td>Факультет бизнеса, таможенного дела и экономической безопасности</td>
+          <td>Ул. Прилукская, д. 3, тел. (812) 767-19-03; 602-23-23, каб. 202, 204</td>
+          <td>Наб. канала Грибоедова, д. 30/32</td>
+        </tr>
+        <tr>
+          <td>Прикладная информатика</td>
+          <td>Факультет информатики и прикладной математики</td>
+          <td>Наб. канала Грибоедова, д. 30/32, тел. (812) 458-97-47, каб. 2031</td>
+          <td>Наб. канала Грибоедова, д. 30/32</td>
+        </tr>
+        <tr>
+          <td>Реклама и связи с общественностью</td>
+          <td>Гуманитарный факультет</td>
+          <td>Москательный переулок, д. 4, тел (812) 458-97-44 , каб. 205,215</td>
+          <td>Москательный переулок, дом 4</td>
+        </tr>
+        <tr>
+          <td>Сервис</td>
+          <td>Факультет сервиса, туризма и гостеприимства</td>
+          <td>7-я Красноармейская ул., д. 6/8, тел (812) 458-97-61, (812) 458-97-62, каб. 101, 102, 105</td>
+          <td>Московский пр, д.103</td>
+        </tr>
+        <tr>
+          <td>Социология</td>
+          <td>Факультет управления</td>
+          <td>Кузнечный пер., д. 9/27, тел. (812) 312-72-32, каб. 603</td>
+          <td>Московский пр, д.103</td>
+        </tr>
+        <tr>
+          <td>Таможенное дело</td>
+          <td>Факультет бизнеса, таможенного дела и экономической безопасности</td>
+          <td>Ул. Прилукская, д. 3, тел. (812) 767-19-03; 602-23-23, каб. 202, 204</td>
+          <td>Наб. канала Грибоедова, д. 30/32</td>
+        </tr>
+        <tr>
+          <td>Товароведение</td>
+          <td>Факультет бизнеса, таможенного дела и экономической безопасности</td>
+          <td>Ул. Прилукская, д. 3, тел. (812) 767-19-03; 602-23-23, каб. 202, 204</td>
+          <td>Наб. канала Грибоедова, д. 30/32</td>
+        </tr>
+        <tr>
+          <td>Торговое дело</td>
+          <td>Факультет бизнеса, таможенного дела и экономической безопасности</td>
+          <td>Ул. Прилукская, д. 3, тел. (812) 767-19-03; 602-23-23, каб. 202, 204</td>
+          <td>Наб. канала Грибоедова, д. 30/32</td>
+        </tr>
+        <tr>
+          <td>Туризм</td>
+          <td>Факультет сервиса, туризма и гостеприимства</td>
+          <td>7-я Красноармейская ул., д. 6/8, тел (812) 458-97-61, (812) 458-97-62, каб. 101, 102, 105</td>
+          <td>Московский пр, д.103</td>
+        </tr>
+        <tr>
+          <td>Управление персоналом</td>
+          <td>Факультет управления</td>
+          <td>Кузнечный пер., д. 9/27, тел. (812) 312-72-32, каб. 603</td>
+          <td>Московский пр, д.103</td>
+        </tr>
+        <tr>
+          <td>Экономика</td>
+          <td>Факультет экономики и финансов</td>
+          <td>Наб. канала Грибоедова, д. 30/32), тел. (812) 310-47-59 каб. 3051, 3060</td>
+          <td>Наб. канала Грибоедова, д. 30/32</td>
+        </tr>
+        <tr>
+          <td>Экономическая безопасность</td>
+          <td>Факультет бизнеса, таможенного дела и экономической безопасности</td>
+          <td>Ул. Прилукская, д. 3, тел. (812) 767-19-03; 602-23-23, каб. 202, 204</td>
+          <td>Наб. канала Грибоедова, д. 30/32</td>
+        </tr>
+      </table>
+    </div>
+    <div class="zaochnaya displayNone" id="zaochnaya__info">
+      <p class="italic bold">I,II (осень) семестры 2021 -2022 г.г.</p>
+      <p>На экзамен необходимо прийти с документом, удостоверяющим личность, и принести <span class="bold">бумагу и
+          ручку</span>. Экзамен проходит в виде <span class="bold">теста</span>, по которому можно набрать не более 100
+        баллов. На всех бланках ответа необходимо указать Ф. И. О., № группы и вариант теста. Ответы указываются на
+        первом листке бумаги в таблице, которая рисуется самостоятельно. К приведённым ответам требуется решение. <span
+          class="italic">(Для задачи - последняя часть - решение обязательно, иначе весь тест может быть аннулирован. В
+          других частях пояснение решения позволяет получить максимальный балл - максимальный балл указан для каждого
+          вопроса.)</span> Экзаменационная оценка выставляется по правилу: если балл меньше 55, то - неуд, если меньше
+        70, но больше 54, то - уд., если меньше 85, но больше 69, то - хорошо, начиная с 85 - отл.</p>
+      <p>Примерные тесты: 1). <a href="documents/заочное отделение/linalg0.pdf">Линейная алгебра.</a> 2). <a
+          href="documents/заочное отделение/ma1obr.pdf">Математический анализ I.</a> ; <a
+          href="documents/заочное отделение/2tzao1kma.pdf">Математический
+          анализ II</a> . <a href="documents/заочное отделение/tv0obr.pdf">Теория вероятностей и
+          математическая статистика.</a> 5). <a href="documents/заочное отделение/matprog0.pdf">Методы оптимальных
+          решений.</a></p>
+      <p><a href="documents/заочное отделение/obrtitlist.pdf">Образец</a> <span class="italic">оформления <span
+            class="bold">титульного
+            листа</span> домашней контрольной работы.</span></p>
+      <p class="bold">1. Контрольные задания и методические указания по <a
+          href="documents/заочное отделение/s1_5.pdf">линейной
+          алгебре</a>.</p>
+      <p class="bold">2 . Контрольные задания и методические указания по <a
+          href="documents/заочное отделение/s2_5.pdf">математическому
+          анализу</a>: в контрольной работе по <a href="documents/заочное отделение/s2_5.pdf">математическому анализу
+          I</a> необходимо
+        выполнить только задания 1-10 (вычислить предел), 2-20 (найти дифференциал), 21-30 (исследовать и построить
+        график); в контрольной работе по <a href="documents/заочное отделение/s2_5.pdf">математическому анализу II</a>
+        необходимо
+        выполнить только задания 31-40, 41-50, 51-60, 61-70.</p>
+      <p class="bold">3. Контрольные задания и методические указания по <a
+          href="documents/заочное отделение/met_ver.pdf">теории
+          вероятностей</a>.</p>
+      <p class="bold">4. Контрольные задания и методические указания по <a
+          href="documents/заочное отделение/met_matprog_zao.pdf">методам
+          оптимальных решений</a>.</p>
+      <p class="bold">5. Контрольные задания и методические указания <a
+          href="documents/заочное отделение/zaogmz.pdf">ГМЗ</a>.</p>
+      <p><span class="bold">6. Контрольные задания и методические указания по <a
+            href="documents/заочное отделение/menedj.pdf">Математике</a> для факультета Менеджмент 1 курс, 1
+          семестр</span> (см. выше в
+        п. п. 1, 2 метод. указания к решению задач).</p>
+    </div>
+  </div>
+  <div id="workingPrograms"></div>
+  <div class="workingPrograms">
+    <h2>
+      Рабочие программы
+    </h2>
+    <div class="underlineBlock"></div>
+    <div class="workingPrograms__main">
+      <div class="workingPrograms__main__part">
+        <button class="workingPrograms__button">Бизнес-информатика</button>
+        <div class="workingPrograms__main__part__list displayNone">
+          <p><a href="documents/Рабочие программы/Бизнес-информатика/Дискретная математика.pdf">Дискретная
+              математика</a></p>
+          <p><a href="documents/Рабочие программы/Бизнес-информатика/Линейная алгебра.pdf">Линейная алгебра</a></p>
+          <p><a
+              href="documents/Рабочие программы/Бизнес-информатика/Дифференциальные и разностные уравнения.pdf">Дифференциальные
+              и разностные уравнения</a></p>
+          <p><a href="documents/Рабочие программы/Бизнес-информатика/Математический анализ.pdf">Математический
+              анализ</a></p>
+          <p><a href="documents/Рабочие программы/Бизнес-информатика/ТВ и МС.pdf">ТВ и МС</a></p>
+        </div>
+      </div>
+      <div class="workingPrograms__main__part">
+        <button class="workingPrograms__button">Гостиничное дело</button>
+        <div class="workingPrograms__main__part__list displayNone">
+          <p><a href="documents/Рабочие программы/Гостиничное дело/Математика ОФО.pdf">Математика ОФО</a></p>
+          <p><a href="documents/Рабочие программы/Гостиничное дело/Математика ЗФО.pdf">Математика ЗФО</a></p>
+          <p><a href="documents/Рабочие программы/Гостиничное дело/Теория массового обслуживания.pdf">Теория массового
+              обслуживания</a></p>
+        </div>
+      </div>
+      <div class="workingPrograms__main__part">
+        <button class="workingPrograms__button">Государственное и муниципальное управление</button>
+        <div class="workingPrograms__main__part__list displayNone">
+          <p><a
+              href="documents/Рабочие программы/Государственное и муниципальное управление/Математика.pdf">Математика</a>
+          </p>
+        </div>
+      </div>
+      <div class="workingPrograms__main__part">
+        <button class="workingPrograms__button">Зарубежное регионоведение</button>
+        <div class="workingPrograms__main__part__list displayNone">
+          <p><a href="documents/Рабочие программы/Зарубежное регионоведение/Математика АТР.pdf">Математика АТР</a></p>
+          <p><a href="documents/Рабочие программы/Зарубежное регионоведение/Математика ЗЕ.pdf">Математика ЗЕ</a></p>
+          <p><a href="documents/Рабочие программы/Зарубежное регионоведение/Математика ЛА.pdf">Математика ЛА</a></p>
+        </div>
+      </div>
+      <div class="workingPrograms__main__part">
+        <button class="workingPrograms__button">Информационная безопасность</button>
+        <div class="workingPrograms__main__part__list displayNone">
+          <p><a href="documents/Рабочие программы/Информационная безопасность/Дискретная математика.pdf">Дискретная
+              математика</a></p>
+          <p><a href="documents/Рабочие программы/Информационная безопасность/Мат. логика и теория алгоритмов.pdf">Мат.
+              логика и теория алгоритмов</a></p>
+          <p><a
+              href="documents/Рабочие программы/Информационная безопасность/Математика (Ан. геометрия, лин. алгебра).pdf">Математика
+              (Ан. геометрия, лин. алгебра)</a></p>
+          <p><a href="documents/Рабочие программы/Информационная безопасность/Случайные процессы.pdf">Случайные
+              процессы</a></p>
+          <p><a href="documents/Рабочие программы/Информационная безопасность/ТВ и МС.pdf">ТВ и МС</a></p>
+        </div>
+      </div>
+      <div class="workingPrograms__main__part">
+        <button class="workingPrograms__button">Информационные системы и технологии</button>
+        <div class="workingPrograms__main__part__list displayNone">
+          <p><a href="documents/Рабочие программы/Информационные системы и технологии/Линейная алгебра.pdf">Линейная
+              алгебра</a></p>
+          <p><a
+              href="documents/Рабочие программы/Информационные системы и технологии/Математический анализ.pdf">Математический
+              анализ</a></p>
+          <p><a href="documents/Рабочие программы/Информационные системы и технологии/ТВ и МС.pdf">ТВ и МС</a></p>
+        </div>
+      </div>
+      <div class="workingPrograms__main__part">
+        <button class="workingPrograms__button">Международные отношения</button>
+        <div class="workingPrograms__main__part__list displayNone">
+          <p><a href="documents/Рабочие программы/Международные отношения/Основы математического анализа.pdf">Основы
+              математического анализа</a></p>
+        </div>
+      </div>
+      <div class="workingPrograms__main__part">
+        <button class="workingPrograms__button">Менеджмент</button>
+        <div class="workingPrograms__main__part__list displayNone">
+          <p><a href="documents/Рабочие программы/Менеджмент/Математика очное.pdf">Математика очное</a></p>
+          <p><a href="documents/Рабочие программы/Менеджмент/Математика очно-заочное.pdf">Математика очно-заочное</a>
+          </p>
+          <p><a href="documents/Рабочие программы/Менеджмент/ТВ и МС очное.pdf">ТВ и МС очное</a></p>
+          <p><a href="documents/Рабочие программы/Менеджмент/ТВ и МС очно-заочное.pdf">ТВ и МС очно-заочное</a></p>
+        </div>
+      </div>
+      <div class="workingPrograms__main__part">
+        <button class="workingPrograms__button">Экономика (ОФМО)</button>
+        <div class="workingPrograms__main__part__list displayNone">
+          <p><a href="documents/Рабочие программы/ОЗФО/Линейная алгебра.pdf">Линейная алгебра</a></p>
+          <p><a href="documents/Рабочие программы/ОЗФО/Математический анализ.pdf">Математический анализ</a></p>
+          <p><a href="documents/Рабочие программы/ОЗФО/Методы оптимальных решений.pdf">Методы оптимальных решений</a>
+          </p>
+          <p><a href="documents/Рабочие программы/ОЗФО/Теория вероятностей.pdf">Теория вероятностей</a></p>
+        </div>
+      </div>
+      <div class="workingPrograms__main__part">
+        <button class="workingPrograms__button">Экономика (ОФО)</button>
+        <div class="workingPrograms__main__part__list displayNone">
+          <p><a href="documents/Рабочие программы/ОФО/Линейная алгебра.pdf">Линейная алгебра</a></p>
+          <p><a href="documents/Рабочие программы/ОФО/Математический анализ.pdf">Математический анализ</a></p>
+          <p><a href="documents/Рабочие программы/ОФО/Методы оптимальных решений.pdf">Методы оптимальных решений</a>
+          </p>
+          <p><a href="documents/Рабочие программы/ОФО/ТВ и МС.pdf">ТВ и МС</a></p>
+        </div>
+      </div>
+      <div class="workingPrograms__main__part">
+        <button class="workingPrograms__button">Прикладная информатика</button>
+        <div class="workingPrograms__main__part__list displayNone">
+          <p><a href="documents/Рабочие программы/Прикладная информатика/Дискретная математика.pdf">Дискретная
+              математика</a></p>
+          <p><a href="documents/Рабочие программы/Прикладная информатика/Линейная алгебра.pdf">Линейная алгебра</a>
+          </p>
+          <p><a href="documents/Рабочие программы/Прикладная информатика/Математический анализ.pdf">Математический
+              анализ</a></p>
+          <p><a href="documents/Рабочие программы/Прикладная информатика/ТВ и МС.pdf">ТВ и МС</a></p>
+        </div>
+      </div>
+      <div class="workingPrograms__main__part">
+        <button class="workingPrograms__button">Сервис</button>
+        <div class="workingPrograms__main__part__list displayNone">
+          <p><a href="documents/Рабочие программы/Сервис/Высшая математика ЗФО.pdf">Высшая математика ЗФО</a></p>
+          <p><a href="documents/Рабочие программы/Сервис/Высшая математика КВД.pdf">Высшая математика КВД</a></p>
+        </div>
+      </div>
+      <div class="workingPrograms__main__part">
+        <button class="workingPrograms__button">Социология</button>
+        <div class="workingPrograms__main__part__list displayNone">
+          <p><a href="documents/Рабочие программы/Социология/Математика.pdf">Математика</a></p>
+        </div>
+      </div>
+      <div class="workingPrograms__main__part">
+        <button class="workingPrograms__button">Таможенное дело</button>
+        <div class="workingPrograms__main__part__list displayNone">
+          <p><a href="documents/Рабочие программы/Таможенное дело/Математика.pdf">Математика</a></p>
+          <p><a href="documents/Рабочие программы/Таможенное дело/Теория вероятностей.pdf">Теория вероятностей</a></p>
+        </div>
+      </div>
+      <div class="workingPrograms__main__part">
+        <button class="workingPrograms__button">Товароведение</button>
+        <div class="workingPrograms__main__part__list displayNone">
+          <p><a href="documents/Рабочие программы/Товароведение/Математика.pdf">Математика</a></p>
+        </div>
+      </div>
+      <div class="workingPrograms__main__part">
+        <button class="workingPrograms__button">Торговое дело</button>
+        <div class="workingPrograms__main__part__list displayNone">
+          <p><a href="documents/Рабочие программы/Торговое дело/Математика.pdf">Математика</a></p>
+        </div>
+      </div>
+      <div class="workingPrograms__main__part">
+        <button class="workingPrograms__button">Туризм</button>
+        <div class="workingPrograms__main__part__list displayNone">
+          <p><a href="documents/Рабочие программы/Туризм/Высшая математика.pdf">Высшая математика</a></p>
+        </div>
+      </div>
+      <div class="workingPrograms__main__part">
+        <button class="workingPrograms__button">Управление качеством</button>
+        <div class="workingPrograms__main__part__list displayNone">
+          <p><a href="documents/Рабочие программы/Управление качеством/Математика ЗФО.pdf">Математика ЗФО</a></p>
+          <p><a href="documents/Рабочие программы/Управление качеством/Математика ОФО.pdf">Математика ОФО</a></p>
+        </div>
+      </div>
+      <div class="workingPrograms__main__part">
+        <button class="workingPrograms__button">Управление персоналом</button>
+        <div class="workingPrograms__main__part__list displayNone">
+          <p><a href="documents/Рабочие программы/Управление персоналом/Математика.pdf">Математика</a></p>
+        </div>
+      </div>
+      <div class="workingPrograms__main__part">
+        <button class="workingPrograms__button">Экономическая безопасность</button>
+        <div class="workingPrograms__main__part__list displayNone">
+          <p><a href="documents/Рабочие программы/Экономическая безопасность/Математика.pdf">Математика</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="contactInfo">
+    <div class="contactInfo__address">
+      <h3 class="contactInfo__address__header">Контакты кафедры</h3>
+      <p>Санкт-Петербург, наб. канала Грибоедова, д.30/32б, ауд. 2037</p>
+      <p>dept.math@unecon.ru</p>
+      <p>Телефон кафедры: 8-(812) 500-43-08</p>
+    </div>
+    <div class="contactInfo__socials">
+      <a href="https://vk.com/unecon">
+        <svg fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="50px" height="50px" class="vkIcon">
+          <path d="M 5 3 C 3.895 3 3 3.895 3 5 L 3 19 C 3 20.105 3.895 21 5 21 L 19 21 C 20.105 21 21 20.105 21 19 L 21 5 C 21 3.895 20.105 3 19 3 L 5 3 z M 5 5 L 19 5 L 19 19 L 5 19 L 5 5 z M 11.791016 8.8574219 C 11.201016 8.8524219 10.700969 8.8600469 10.417969 8.9980469 C 10.229969 9.0900469 10.084828 9.2965937 10.173828 9.3085938 C 10.282828 9.3225937 10.529109 9.3746875 10.662109 9.5546875 C 10.831109 9.7856875 10.826172 10.304688 10.826172 10.304688 C 10.826172 10.304687 10.922656 11.732156 10.597656 11.910156 C 10.374656 12.032156 10.069109 11.784437 9.4121094 10.648438 C 9.0751094 10.065437 8.8222656 9.421875 8.8222656 9.421875 C 8.8222656 9.421875 8.7725469 9.3003281 8.6855469 9.2363281 C 8.5785469 9.1583281 8.4296875 9.1328125 8.4296875 9.1328125 L 6.859375 9.140625 C 6.859375 9.140625 6.6221563 9.1411406 6.5351562 9.2441406 C 6.4581563 9.3361406 6.5292969 9.5175781 6.5292969 9.5175781 C 6.5292969 9.5175781 7.7602969 12.386844 9.1542969 13.839844 C 10.433297 15.171844 11.882812 15.050781 11.882812 15.050781 L 12.541016 15.050781 C 12.541016 15.050781 12.740797 15.062125 12.841797 14.953125 C 12.934797 14.852125 12.931641 14.695312 12.931641 14.695312 C 12.931641 14.695312 12.919125 13.811641 13.328125 13.681641 C 13.732125 13.553641 14.249828 14.535109 14.798828 14.912109 C 15.212828 15.198109 15.529297 15.136719 15.529297 15.136719 L 16.998047 15.117188 C 16.998047 15.117188 17.765297 15.068938 17.404297 14.460938 C 17.374297 14.410937 17.1925 14.013312 16.3125 13.195312 C 15.3905 12.339313 15.514047 12.477094 16.623047 10.996094 C 17.299047 10.095094 17.569375 9.5445938 17.484375 9.3085938 C 17.403375 9.0825937 16.90625 9.1425781 16.90625 9.1425781 L 15.253906 9.1523438 C 15.253906 9.1523438 15.130062 9.1344531 15.039062 9.1894531 C 14.950063 9.2434531 14.892578 9.3671875 14.892578 9.3671875 C 14.892578 9.3671875 14.63125 10.066156 14.28125 10.660156 C 13.54625 11.913156 13.251859 11.978391 13.130859 11.900391 C 12.850859 11.720391 12.921875 11.174156 12.921875 10.785156 C 12.921875 9.5711562 13.1045 9.0645938 12.5625 8.9335938 C 12.3825 8.8895937 12.251016 8.8624219 11.791016 8.8574219 z"/>
+        </svg>
+      </a>
+      <a href="https://www.youtube.com/c/UNECON_channel">
+        <svg fill="#000000" xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24" width="50px" height="50px" class="ytIcon">
+          <path
+            d="M 12 4 C 12 4 5.7455469 3.9999687 4.1855469 4.4179688 C 3.3245469 4.6479688 2.6479687 5.3255469 2.4179688 6.1855469 C 1.9999687 7.7455469 2 12 2 12 C 2 12 1.9999687 16.254453 2.4179688 17.814453 C 2.6479687 18.675453 3.3255469 19.352031 4.1855469 19.582031 C 5.7455469 20.000031 12 20 12 20 C 12 20 18.254453 20.000031 19.814453 19.582031 C 20.674453 19.352031 21.352031 18.674453 21.582031 17.814453 C 22.000031 16.254453 22 12 22 12 C 22 12 22.000031 7.7455469 21.582031 6.1855469 C 21.352031 5.3255469 20.674453 4.6479688 19.814453 4.4179688 C 18.254453 3.9999687 12 4 12 4 z M 12 6 C 14.882 6 18.490875 6.1336094 19.296875 6.3496094 C 19.465875 6.3946094 19.604391 6.533125 19.650391 6.703125 C 19.891391 7.601125 20 10.342 20 12 C 20 13.658 19.891391 16.397875 19.650391 17.296875 C 19.605391 17.465875 19.466875 17.604391 19.296875 17.650391 C 18.491875 17.866391 14.882 18 12 18 C 9.119 18 5.510125 17.866391 4.703125 17.650391 C 4.534125 17.605391 4.3956094 17.466875 4.3496094 17.296875 C 4.1086094 16.398875 4 13.658 4 12 C 4 10.342 4.1086094 7.6011719 4.3496094 6.7011719 C 4.3946094 6.5331719 4.533125 6.3946094 4.703125 6.3496094 C 5.508125 6.1336094 9.118 6 12 6 z M 10 8.5351562 L 10 15.464844 L 16 12 L 10 8.5351562 z" />
+        </svg>
+      </a>
+      <a href="https://www.tiktok.com/@uneconru">
+        <svg fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="50px" height="50px" class="ttIcon">
+          <path d="M 6 3 C 4.3550302 3 3 4.3550302 3 6 L 3 18 C 3 19.64497 4.3550302 21 6 21 L 18 21 C 19.64497 21 21 19.64497 21 18 L 21 6 C 21 4.3550302 19.64497 3 18 3 L 6 3 z M 6 5 L 18 5 C 18.56503 5 19 5.4349698 19 6 L 19 18 C 19 18.56503 18.56503 19 18 19 L 6 19 C 5.4349698 19 5 18.56503 5 18 L 5 6 C 5 5.4349698 5.4349698 5 6 5 z M 12 7 L 12 14 C 12 14.56503 11.56503 15 11 15 C 10.43497 15 10 14.56503 10 14 C 10 13.43497 10.43497 13 11 13 L 11 11 C 9.3550302 11 8 12.35503 8 14 C 8 15.64497 9.3550302 17 11 17 C 12.64497 17 14 15.64497 14 14 L 14 10.232422 C 14.616148 10.671342 15.259118 11 16 11 L 16 9 C 15.952667 9 15.262674 8.7809373 14.78125 8.3613281 C 14.299826 7.941719 14 7.4149911 14 7 L 12 7 z"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+
+  <script>
+    //енто скриптик штобы переключать очно-заочные блоки, взаимодействие с верхней навигацией добавлено)))
+    function ochnaya() {
+      document.getElementById('ochnaya').classList.remove('nonActiveButton');
+      document.getElementById('zaochnaya').classList.add('nonActiveButton');
+      document.getElementById('zaochnaya__info').classList.add('displayNone');
+      document.getElementById('ochnaya__info').classList.remove('displayNone');
+    }
+
+    function zaochnaya() {
+      document.getElementById('ochnaya').classList.add('nonActiveButton');
+      document.getElementById('zaochnaya').classList.remove('nonActiveButton');
+      document.getElementById('ochnaya__info').classList.add('displayNone');
+      document.getElementById('zaochnaya__info').classList.remove('displayNone');
+    }
+  </script>
+  <script>
+    //енто скрипт для рабочих программ в конце страницы
+    function sleep(time) {
+      return new Promise((resolve) => setTimeout(resolve, time));
+    }
+
+    let allButtons = document.getElementsByClassName('workingPrograms__button');
+    let allLists = document.getElementsByClassName('workingPrograms__main__part__list');
+
+    function hidenseek(i) {
+      allButtons[i].onclick = function () {
+        if (allLists[i].classList.contains('listDisplayVisible')) {
+          allLists[i].classList.remove('listDisplayVisible');
+          sleep(250).then(() => {
+            allLists[i].classList.add('displayNone');
+          });
+        } else {
+          allLists[i].classList.remove('displayNone');
+          sleep(50).then(() => {
+            allLists[i].classList.add('listDisplayVisible');
+          });
+        }
+      }
+    }
+
+    for (i = 0; i < 20; i++) {
+      hidenseek(i);
+    }
+
+  </script>
+</body>
+
+</html>
