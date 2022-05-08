@@ -183,6 +183,20 @@ body {
     font-weight: 500;
     text-shadow: 0 0 6px rgb(0 0 0 / 75%);
 }
+/*Говнооптимизация, которую я добавил с телефона*/
+@media all and (max-width: 768px) {
+    .welcomeText h1 {
+    font-size: 40px;
+    }
+    
+    .welcomeText h2 {
+    font-size: 30px;
+    }
+
+    .welcomeText p {
+    font-size: 15px;
+    }
+}
 
 .raspisanie {
     padding-top: 3em;
