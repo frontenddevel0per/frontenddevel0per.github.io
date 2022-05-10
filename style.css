@@ -74,6 +74,7 @@ body {
         flex-direction: column;
         padding: 0;
         margin: 0 auto 0 auto;
+        transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
     }
 }
 
@@ -99,6 +100,10 @@ body {
 .header__menu li a:hover {
     text-decoration: underline rgb(22, 71, 231);
     text-decoration-thickness: 3px;
+}
+
+.header__menu li a:visited {
+    color: #551A8B;
 }
 
 .dropdown button {
@@ -162,6 +167,13 @@ body {
     }
 }
 
+@media all and (max-width: 1200px) {
+    .welcomeText {
+        padding-top: 5em;
+        padding-bottom: 5em;
+    }
+}
+
 .welcomeText__Decoration {
     color: rgb(40, 243, 142);
 }
@@ -183,6 +195,7 @@ body {
     font-weight: 500;
     text-shadow: 0 0 6px rgb(0 0 0 / 75%);
 }
+
 /*Говнооптимизация, которую я добавил с телефона*/
 @media all and (max-width: 768px) {
     .welcomeText h1 {
@@ -195,6 +208,11 @@ body {
 
     .welcomeText p {
     font-size: 15px;
+    }
+
+    .welcomeText {
+        padding-top: 2em;
+        padding-bottom: 2em;
     }
 }
 
@@ -292,6 +310,10 @@ body {
     border: 2px solid #00aded;
 }
 
+.teachers-table2 {
+    display: none;
+}
+
 .teachers-table td , .educationForms td{
     height: 30px;
     /* border: 1px solid black; */
@@ -323,8 +345,11 @@ body {
 
 @media all and (max-width: 768px) {
     .teachers-table {
-        min-width: 90%;
-        max-width: 90%;
+        display:none;
+    }
+
+    .teachers-table2 {
+        display: block;
     }
 }
 
@@ -335,6 +360,33 @@ body {
     font-weight: bold;
     /* height: 40px; */
     text-align: center;
+}
+
+/* .teachers-table2 .main-stroke tr,  .teachers-table2 .main-stroke td {
+    min-width: 100%;
+} */
+
+.teachers-table2 td {
+    width: 50%;
+}
+
+.teachers-table2 .main-stroke p {
+    margin: 10px auto;
+}
+
+.teachers-table2 p {
+    margin: 5px auto;
+    padding-left: 30px;
+}
+
+.teachers-table2 td p:first-child {
+    /* text-align: center; */
+    font-weight: bold;
+}
+
+.teachers-table2 img {
+    vertical-align: bottom;
+    padding-right: 5px;
 }
 
 .textAlign__center {
