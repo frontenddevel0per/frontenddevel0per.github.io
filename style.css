@@ -276,6 +276,13 @@ body {
     margin: 0 auto;
 }
 
+@media all and (max-width: 768px) {
+    .ads__main {
+        grid-template-columns: 100%;
+        row-gap: 2em;
+    }
+}
+
 .ads__main__part {
     text-align: center;
     border: 2px solid #00aded;
@@ -368,6 +375,7 @@ body {
 
 .teachers-table2 td {
     width: 50%;
+    border-bottom: 2px solid #00aded;
 }
 
 .teachers-table2 .main-stroke p {
@@ -377,6 +385,7 @@ body {
 .teachers-table2 p {
     margin: 5px auto;
     padding-left: 30px;
+    line-height: 1.5;
 }
 
 .teachers-table2 td p:first-child {
