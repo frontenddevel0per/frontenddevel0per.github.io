@@ -388,6 +388,10 @@ body {
     line-height: 1.5;
 }
 
+.teachers-table2 .main-stroke p {
+    padding-left: 0;
+}
+
 .teachers-table2 td p:first-child {
     /* text-align: center; */
     font-weight: bold;
