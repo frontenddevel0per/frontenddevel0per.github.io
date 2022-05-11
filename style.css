@@ -70,10 +70,6 @@ body {
         margin: 0;
     }
 
-    .header__menu {
-        min-width: 500px;
-    }
-
     .header__menu ul {
         flex-direction: column;
         padding: 0;
