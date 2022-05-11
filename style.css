@@ -88,6 +88,10 @@ body {
 }
 
 @media all and (max-width: 768px) {
+    .header__menu {
+       min-width: none;
+    }
+
     .header__menu li {
         margin: 0.5em auto;
     }
