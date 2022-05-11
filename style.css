@@ -447,6 +447,12 @@ body {
     transition: 500ms all ease;
 }
 
+@media all and (max-width: 768px) {
+    .ochnaya-table {
+        display: none;
+    }
+}
+
 .zaochnaya {
     width: 90%;
     margin: 0 auto;
