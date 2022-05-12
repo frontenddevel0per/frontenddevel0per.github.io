@@ -16,12 +16,12 @@
     <div class="header">
       <div class="header__logo">
         <img src="pictures/logo.jpg" alt="Лого" height="75">
-        <input id="menu-toggle" type="checkbox" class="displayNone">
-        <label class="menu-button-container" for="menu-toggle">
+        <input id="menu-toggle" type="checkbox" class="header__checkbox displayNone">
+        <label class="menu-button-container" for="menu-toggle" id="menuButtonContainer">
           <div class='menu-button'></div>
         </label>
       </div>
-      <div class="header__menu displayNone">
+      <div class="header__menu">
         <ul>
           <li>
             <a href="#welcome" target="_self">Начало</a>
@@ -483,8 +483,8 @@
       </tr>
     </table>
   </div>
-  <div id="educationForms"></div>
-  <div class="educationForms">
+  <!-- <div id="educationForms"></div> -->
+  <div class="educationForms" id="educationForms">
     <h2>
       Формы обучения
     </h2>
@@ -927,6 +927,32 @@
       hidenseek(i);
     }
 
+  </script>
+  <script>
+    let dropmenu = document.getElementsByClassName('header__menu');
+
+    menuButtonContainer.onclick = function() {
+      if (document.querySelector('.header__checkbox').checked) {
+        dropmenu[0].classList.remove('displayBlock');
+      } else {
+        dropmenu[0].classList.add('displayBlock');
+      }
+    }
+
+    let links = document.querySelectorAll("div.header__menu > ul > li > a");
+    let links2 = document.querySelectorAll("div.dropdown__content > a");
+
+    for (i = 0; i < 5; i++) {
+      links[i].onclick = function() {
+        document.querySelector('.header__checkbox').checked = false;
+        dropmenu[0].classList.remove('displayBlock');
+      }
+
+      links2[i].onclick = function() {
+        document.querySelector('.header__checkbox').checked = false;
+        dropmenu[0].classList.remove('displayBlock');
+      }
+    }
   </script>
 </body>
 

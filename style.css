@@ -220,6 +220,16 @@ body {
     padding-bottom: 10px;
 }
 
+@media all and (max-width: 768px) {
+    .header__menu {
+        display: none;
+    }
+}
+
+#menu-toggle:checked + .header__menu ul {
+    display: block;
+}
+
 .welcomeText {
     background-image: url(pictures/background-anime.jpg);
     background-size: 100%;
@@ -431,8 +441,13 @@ body {
         display:none;
     }
 
-    .teachers-table2 {
+    .teachers .teachers-table2 {
         display: block;
+        padding-bottom: 0px;
+    }
+
+    .teachers-table2 tr:last-child td {
+        border-bottom: none;
     }
 }
 
@@ -460,7 +475,8 @@ body {
 
 .teachers-table2 p {
     margin: 5px auto;
-    padding-left: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
     line-height: 1.5;
 }
 
@@ -493,6 +509,13 @@ body {
     display: flex;
     justify-content: space-around;
     margin: 0 auto;
+}
+
+@media all and (max-width: 768px) {
+    .educationForms__navbar {
+        width: 90%;
+        justify-content: space-around;
+    }
 }
 
 .educationForms__navbar__button {
@@ -540,6 +563,10 @@ body {
 
 .displayNone {
     display: none;
+}
+
+.displayBlock {
+    display: block;
 }
 
 .bold {
@@ -689,7 +716,7 @@ body {
 
 @media all and (max-width: 768px) {
     #welcome, #teachers, #workingPrograms, #educationForms {
-        padding-top: 165px;
-        margin-top: -165px;
+        padding-top: 30px;
+        margin-top: -30px;
     }
 }
