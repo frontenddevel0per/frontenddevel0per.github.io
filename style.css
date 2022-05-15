@@ -403,6 +403,12 @@ body {
     border: 2px solid #00aded;
 }
 
+@media all and (max-width: 768px) {
+    .teachers table , .educationForms table{
+        padding-bottom: 0;
+    }
+}
+
 .teachers-table2 {
     display: none;
 }
@@ -443,7 +449,6 @@ body {
 
     .teachers .teachers-table2 {
         display: block;
-        padding-bottom: 0px;
     }
 
     .teachers-table2 tr:last-child td {
@@ -470,7 +475,7 @@ body {
 }
 
 .teachers-table2 .main-stroke p {
-    margin: 10px auto;
+    margin: 5px auto;
 }
 
 .teachers-table2 p {
@@ -546,10 +551,55 @@ body {
     transition: 500ms all ease;
 }
 
+.ochnaya__table2 {
+    display: none;
+}
+
 @media all and (max-width: 768px) {
-    .ochnaya table:first-child {
+    .ochnaya__table {
         display: none;
     }
+
+    .ochnaya__table2 {
+        display: block;
+        padding: 0;
+    }
+}
+
+.ochnaya__table2 td {
+    width: 50%;
+    border: 2px solid #00aded;
+    border-width: 0 0 2px 0;
+}
+
+.ochnaya__table2 .main-stroke p {
+    margin: 5px auto;
+    text-align: center;
+}
+
+.ochnaya__table2 p {
+    margin: 5px auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 1.5;
+}
+
+.ochnaya__table2 .main-stroke p {
+    padding-left: 0;
+}
+
+.ochnaya__table2 td p:first-child {
+    /* text-align: center; */
+    font-weight: bold;
+}
+
+.ochnaya__table2 img {
+    vertical-align: bottom;
+    padding-right: 5px;
+}
+
+.ochnaya__table2 tr:last-child td {
+    border-bottom: none;
 }
 
 .zaochnaya {
