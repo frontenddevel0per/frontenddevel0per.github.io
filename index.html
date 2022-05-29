@@ -16,8 +16,7 @@
     <div class="header">
       <div class="header__logo">
         <img src="pictures/logo.jpg" alt="Лого" height="75px">
-        <input id="menu-toggle" type="checkbox" class="header__checkbox displayNone">
-        <label class="menu-button-container" for="menu-toggle" id="menuButtonContainer">
+        <label class="menu-button-container" id="menuButtonContainer">
           <div class='menu-button'></div>
         </label>
       </div>
@@ -490,8 +489,8 @@
     </h2>
     <div class="underlineBlock"></div>
     <div class="educationForms__navbar">
-      <button id="ochnaya" class="educationForms__navbar__button" onclick="ochnaya()">Очная</button>
-      <button id="zaochnaya" class="educationForms__navbar__button nonActiveButton" onclick="zaochnaya()">Очно-заочная,
+      <button id="ochnaya" class="educationForms__navbar__button">Очная</button>
+      <button id="zaochnaya" class="educationForms__navbar__button nonActiveButton">Очно-заочная,
         заочная</button>
     </div>
     <div class="ochnaya" id="ochnaya__info">
@@ -1059,95 +1058,7 @@
     </div>
   </div>
 
-  <script>
-    //енто скриптик штобы переключать очно-заочные блоки, взаимодействие с верхней навигацией добавлено)))
-    function ochnaya() {
-      document.getElementById('ochnaya').classList.remove('nonActiveButton');
-      document.getElementById('zaochnaya').classList.add('nonActiveButton');
-      document.getElementById('zaochnaya__info').classList.add('displayNone');
-      document.getElementById('ochnaya__info').classList.remove('displayNone');
-    }
-
-    function zaochnaya() {
-      document.getElementById('ochnaya').classList.add('nonActiveButton');
-      document.getElementById('zaochnaya').classList.remove('nonActiveButton');
-      document.getElementById('ochnaya__info').classList.add('displayNone');
-      document.getElementById('zaochnaya__info').classList.remove('displayNone');
-    }
-  </script>
-
-  <script>
-    //енто скрипт для рабочих программ в конце страницы
-    function sleep(time) {
-      return new Promise((resolve) => setTimeout(resolve, time));
-    }
-
-    let allButtons = document.getElementsByClassName('workingPrograms__button');
-    let allLists = document.getElementsByClassName('workingPrograms__main__part__list');
-
-    function hidenseek(i) {
-      allButtons[i].onclick = function () {
-        if (allLists[i].classList.contains('listDisplayVisible')) {
-          allLists[i].classList.remove('listDisplayVisible');
-          sleep(250).then(() => {
-            allLists[i].classList.add('displayNone');
-          });
-        } else {
-          allLists[i].classList.remove('displayNone');
-          sleep(50).then(() => {
-            allLists[i].classList.add('listDisplayVisible');
-          });
-        }
-      }
-    }
-
-    for (i = 0; i < 20; i++) {
-      hidenseek(i);
-    }
-
-  </script>
-  <script>
-    let dropmenu = document.getElementsByClassName('header__menu');
-
-    menuButtonContainer.onclick = function() {
-      if (document.querySelector('.header__checkbox').checked) {
-        dropmenu[0].classList.remove('displayBlock');
-      } else {
-        dropmenu[0].classList.add('displayBlock');
-      }
-    }
-
-    let links = document.querySelectorAll("div.header__menu > ul > li > a");
-    let links2 = document.querySelectorAll("div.dropdown__content > a");
-
-    for (i = 0; i < 3; i++) {
-      links[i].onclick = function() {
-        document.querySelector('.header__checkbox').checked = false;
-        dropmenu[0].classList.remove('displayBlock');
-      }
-
-      if (i == 0) {
-        links2[i].onclick = function() {
-        document.querySelector('.header__checkbox').checked = false;
-        dropmenu[0].classList.remove('displayBlock');
-        ochnaya();
-      }
-      } else {
-        links2[i].onclick = function() {
-        document.querySelector('.header__checkbox').checked = false;
-        dropmenu[0].classList.remove('displayBlock');
-        zaochnaya();
-      }
-      }
-   }
-
-    // links2[0].onclick = function() {
-    //   document.getElementById('ochnaya').classList.remove('nonActiveButton');
-    //   document.getElementById('zaochnaya').classList.add('nonActiveButton');
-    //   document.getElementById('zaochnaya__info').classList.add('displayNone');
-    //   document.getElementById('ochnaya__info').classList.remove('displayNone');
-    // }
-  </script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
