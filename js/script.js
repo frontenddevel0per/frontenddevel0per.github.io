@@ -22,11 +22,13 @@ function zaochnaya() {
 
 navbarButton.addEventListener('click', () => {
     navbar.classList.toggle('displayBlock');
+    navbarButton.classList.toggle('menu-button-container-active');
 });
 
 navbarLinks.forEach(e => {
     e.addEventListener('click', () => {
         navbar.classList.toggle('displayBlock');
+        navbarButton.classList.toggle('menu-button-container-active');
         if (e == dropdownLinks[0]) {
             ochnaya();
         }
